@@ -20,7 +20,7 @@ function Belen() {
         <article className={styles.role__article}>
           <div onClick={openModal}>
             <Picture
-              src="/src/assets/novedades/novedad1.svg"
+              src="./src/assets/novedades/novedad1.svg"
               alt="Belen Cortese"
               isModal
             />
