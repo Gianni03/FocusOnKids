@@ -1,0 +1,135 @@
+.footer {
+  width: 100%;
+  padding: 1em 0;
+  margin-top: 1em;
+  text-align: center;
+  background-color: var(--principal-color-green);
+}
+
+.footer__section__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1em;
+}
+
+.footer__section__contact {
+  display: grid;
+  max-width: 1200px;
+}
+
+.footer__article__none {
+  display: none;
+}
+
+.footer__article__none img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer__article__visible img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer__figure__logo {
+  width: 100%;
+  height: auto;
+}
+
+.footer__figure__logo img {
+  width: 50%;
+  height: auto;
+}
+
+.footer__article__visible div {
+  display: flex;
+  gap: 0.75em;
+}
+
+.footer__article__visible aside {
+  display: none;
+}
+
+.footer__article__visible h4 {
+  display: none;
+}
+
+.footer__section__rights {
+  padding-top: 0.5em;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .footer__section__container {
+    background-color: var(--principal-color-green);
+    padding: 1em 0;
+  }
+
+  .footer__section__contact {
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    padding: 0 1em;
+  }
+
+  .footer__section__contact:last-child div {
+    margin-bottom: 1rem;
+  }
+
+  .footer__article__none {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .footer__article__none a {
+    margin-bottom: 0.25em;
+    font-size: 0.9em;
+  }
+
+  .footer__article__none div img {
+    margin-right: 0.6em;
+  }
+
+  .footer__article__visible {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__article__visible aside {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 0.9em;
+    gap: 0.25em;
+  }
+
+  .footer__article__none h4 {
+    margin-bottom: 0.5em;
+    color: var(--principal-color-white);
+  }
+  
+  .footer__article__visible h4 {
+    font-size: 1.15em;
+    margin-bottom: 0.5em;
+    display: flex;
+    color: var(--principal-color-white);
+    text-align: left;
+  }
+
+  .footer__section__rights {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5em 5em;
+    font-size: 0.75em;
+    background-color: var(--principal-color-white);
+  }
+}

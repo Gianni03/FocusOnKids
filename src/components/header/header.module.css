@@ -1,0 +1,36 @@
+/* ***************************************************** */
+/* Estilos generales de Header */
+/* ***************************************************** */
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid var(--principal-color-green);
+}
+
+/* ***************************************************** */
+/* Estilos de info del header */
+/* ***************************************************** */
+.header__info {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--principal-color-pink);
+}
+
+.header__info img {
+  width: 20px;
+  height: 20px;
+  margin-right: .3rem;
+  vertical-align: middle;
+}
+
+.header__info a {
+  color: var(--principal-color-white);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 4px;
+}

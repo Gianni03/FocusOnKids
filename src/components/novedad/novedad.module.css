@@ -1,0 +1,38 @@
+.novedad {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2em;
+  padding-bottom: 1em;
+  border: medium solid #1d763d;
+}
+
+.novedad__aside__item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.novedad__aside__item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  .novedad {
+    max-width: 100%;
+    margin: 0;
+    border: 0;
+    padding-bottom: 0;
+    border-radius: 0;
+  }
+
+  .novedad__aside__item img {
+    border: medium solid #1d763d;
+  }
+}

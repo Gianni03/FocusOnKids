@@ -1,0 +1,42 @@
+:root {
+  --font-title-subtitle: 'Quicksand';
+  --font-text: 'Inter';
+
+  --principal-color-pink: #f350a0;
+  --principal-color-green: #1d763d;
+  --principal-color-green-op: #9ec0a9;
+  --principal-color-white: #f4f1f1;
+  --principal-color-grey: #dadada;
+  --principal-color-black: #222;
+  --principal-color-greenOP: #1d763ea3;
+
+  --secondary-color-blue: #0548a8;
+  --secondary-color-sky-blue: #90cddf54;
+  --secondary-color-red: #f20029;
+  --secondary-color-green: #5cffc3;
+}
+
+body {
+  font-family: 'Quicksand', 'Inter', sans-serif;
+}
+
+html {
+  background-color: var(--principal-color-white);
+}
+
+hr {
+  background-color: var(--principal-color-pink);
+  height: 1px;
+  border: none;
+}
+
+.carousel__indicator {
+  margin-right: 0.25em;
+  padding: 0.25em;
+  border-radius: 50%;
+  background-color: var(--principal-color-green-op);
+  cursor: pointer;
+}
+.carousel__indicator.active {
+  background-color: var(--principal-color-green);
+}
