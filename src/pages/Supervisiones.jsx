@@ -7,17 +7,24 @@ import { Audio } from '../components/player/Audio';
 import { Layout } from '../components/layout/Layout';
 import icons from '../assets/icons';
 import styles from './supervisiones.module.css';
+import novedad2 from '../assets/novedades/novedad2.svg';
 
 function Supervisiones() {
   const [playAudio1, setPlayAudio1] = useState(false);
   const [playAudio2, setPlayAudio2] = useState(false);
-  
+
   return (
     <Layout>
       <Title>SUPERVISIONES</Title>
       <article className={styles.supervisiones__article__content}>
         <p>
-      La supervisiones son elegidas tanto por Terapistas Ocupacionales como por otros profesionales de la salud que acompañan a los niños y a sus familias. Podes pedir supervisión si sos Psicóloga, Nutricionista, Psicóloga, Psicomotricista, Kinesiólogo o Fisioterapeuta. Las dudas más frecuentes por las que piden supervisión tienen que ver, mayormente, por si hay o no desafíos sensoriales que están impactando en la conducta del niño.
+          La supervisiones son elegidas tanto por Terapistas Ocupacionales como
+          por otros profesionales de la salud que acompañan a los niños y a sus
+          familias. Podes pedir supervisión si sos Psicóloga, Nutricionista,
+          Psicóloga, Psicomotricista, Kinesiólogo o Fisioterapeuta. Las dudas
+          más frecuentes por las que piden supervisión tienen que ver,
+          mayormente, por si hay o no desafíos sensoriales que están impactando
+          en la conducta del niño.
         </p>
       </article>
       <section className={styles.supervisiones__section__content}>
@@ -39,11 +46,11 @@ function Supervisiones() {
         </figure>
         <article className={styles.card__article__content}>
           <figure className={styles.card__figure__img}>
-            <img src="/src/assets/novedades/novedad2.svg" alt="sesiones de colaboración" />
+            <img src={novedad2} alt="sesiones de colaboración" />
           </figure>
           <section>
             <h3>TITOLO AUDIO</h3>
-            {playAudio1 && <Audio isPlaying={playAudio1} song="/src/assets/del.mp3" />}
+            {playAudio1 && <Audio isPlaying={playAudio1} song="" />}
           </section>
           <div
             className={styles.audio__btn}
@@ -52,7 +59,10 @@ function Supervisiones() {
               setPlayAudio2(false);
             }}
           >
-            <img src={playAudio1 ? icons.pause : icons.play} alt="Play button" />
+            <img
+              src={playAudio1 ? icons.pause : icons.play}
+              alt="Play button"
+            />
           </div>
         </article>
       </article>
@@ -62,11 +72,11 @@ function Supervisiones() {
         </figure>
         <article className={styles.card__article__content}>
           <figure className={styles.card__figure__img}>
-            <img src="/src/assets/novedades/novedad2.svg" alt="sesiones de colaboración" />
+            <img src={novedad2} alt="sesiones de colaboración" />
           </figure>
           <section>
             <h3>TITOLO AUDIO</h3>
-            {playAudio2 && <Audio song="/src/assets/del.mp3" isPlaying={playAudio2} />}
+            {playAudio2 && <Audio song="" isPlaying={playAudio2} />}
           </section>
           <div
             className={styles.audio__btn}
@@ -75,7 +85,10 @@ function Supervisiones() {
               setPlayAudio1(false);
             }}
           >
-            <img src={playAudio2 ? icons.pause : icons.play} alt="Play button" />
+            <img
+              src={playAudio2 ? icons.pause : icons.play}
+              alt="Play button"
+            />
           </div>
         </article>
       </article>

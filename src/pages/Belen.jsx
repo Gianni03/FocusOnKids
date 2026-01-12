@@ -1,29 +1,19 @@
-import { useModal } from '../hooks/useModal';
 import { Layout } from '../components/layout/Layout';
 import { CTAContact } from '../components/cta/CTAContact';
 import CTASocialMedia from '../components/cta/CTASocialMedia';
 import { Picture } from '../components/picture/Picture';
 import { Title } from '../components/title/Title';
-import { Video } from '../components/video/Video';
-import { Modal } from '../components/modal/Modal';
 import styles from './belen.module.css';
+import novedad1 from '../assets/novedades/novedad1.svg';
 
 function Belen() {
-  const [isOpenModal, openModal, closeModal] = useModal(false);
   return (
     <Layout>
       <Title>Sobre Belen</Title>
       <section className={styles.container}>
-        <Modal isOpen={isOpenModal} closeModal={closeModal}>
-          <Video />
-        </Modal>
         <article className={styles.role__article}>
-          <div onClick={openModal}>
-            <Picture
-              src="./src/assets/novedades/novedad1.svg"
-              alt="Belen Cortese"
-              isModal
-            />
+          <div>
+            <Picture src={novedad1} alt="Belen Cortese" />
           </div>
           <div className={styles.role__div__content}>
             <h3>Lic. Belén Cortese</h3>
@@ -52,7 +42,6 @@ function Belen() {
             estudiantes y las nuevas generaciones... de quienes continúo
             aprendiendo a diario.
           </p>
-          <Video />
         </section>
       </section>
       <CTAContact alwaysActive />

@@ -1,40 +1,43 @@
+.container__novedades {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .subTitulo {
-  margin-right: 3em;
-  text-align: justify;
+  text-align: left;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
 }
 
 .subTitulo h2 {
   margin-top: 1em;
-  margin-bottom: .7em;
-  font-size: 1em;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
   color: var(--principal-color-pink);
+  text-transform: uppercase;
 }
 
-.novedades .division {
-  margin: 1em 0;
+.division {
+  margin: 0.5rem 0 1.5rem 0;
+  border: none;
+  border-top: 2px solid var(--principal-color-green);
+  opacity: 0.3;
+  width: 100%;
 }
 
 .tarjeta {
-  /* ver dispocicon grid */
-  width: 100%;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-}
-
-.comunidad__img {
-  display: flex;
-  width: 60%;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  margin: 3.5rem auto;
+  gap: 1rem;
 }
-
 
 @media screen and (min-width: 780px) {
   .tarjeta {
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
   }
 }

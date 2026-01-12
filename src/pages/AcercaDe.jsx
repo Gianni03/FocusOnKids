@@ -3,6 +3,10 @@ import { Layout } from '../components/layout/Layout';
 import { Title } from '../components/title/Title';
 import CTASocialMedia from '../components/cta/CTASocialMedia';
 import { CTAContact } from '../components/cta/CTAContact';
+// ? imagenes
+import img1 from '../assets/img/img1.png';
+import img2 from '../assets/img/img2.png';
+import img3 from '../assets/img/img3.png';
 // ? estilos
 import styles from './acerca.module.css';
 
@@ -26,9 +30,9 @@ function AcercaDe() {
         <p>
           Sesiones de colaboración que son muy similares a sesiones de
           supervición pero que la idea de que sea una instancia colaborativa,
-          tiene que ver con una filosofía de Focus de que &ldquo;ayudándonos, nos
-          ayudamos mutuamente&rdquo;. Por otro lado también ofrecemos Charlas abiertas
-          a la comunidad y grupos de estudio.
+          tiene que ver con una filosofía de Focus de que &ldquo;ayudándonos,
+          nos ayudamos mutuamente&rdquo;. Por otro lado también ofrecemos
+          Charlas abiertas a la comunidad y grupos de estudio.
         </p>
         <p>
           Además brindamos sesiones de Terapia Ocupacional con abordaje de
@@ -58,27 +62,15 @@ function AcercaDe() {
       </Title>
       <section className={styles.container__img}>
         <figure className={styles.picture}>
-          <img
-            className={styles.picture__img}
-            src="src/assets/img/img1.png"
-            alt="juegos"
-          />
+          <img className={styles.picture__img} src={img1} alt="juegos" />
         </figure>
         <div className={styles.ocultar}>
           <figure className={styles.picture}>
-            <img
-              className={styles.picture__img}
-              src="src/assets/img/img2.png"
-              alt="juegos"
-            />
+            <img className={styles.picture__img} src={img2} alt="juegos" />
           </figure>
         </div>
         <figure className={styles.picture}>
-          <img
-            className={styles.picture__img}
-            src="src/assets/img/img3.png"
-            alt="juegos"
-          />
+          <img className={styles.picture__img} src={img3} alt="juegos" />
         </figure>
       </section>
       <CTAContact alwaysActive />

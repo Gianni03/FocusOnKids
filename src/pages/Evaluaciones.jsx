@@ -4,6 +4,7 @@ import { Title } from '../components/title/Title';
 import { CTAContact } from '../components/cta/CTAContact';
 import Imagen from '../components/img/Imagen';
 import CTASocialMedia from '../components/cta/CTASocialMedia';
+import novedad2 from '../assets/novedades/novedad2.svg';
 // estilos
 import style from './evaluaciones.module.css';
 
@@ -40,8 +41,8 @@ function Evaluaciones() {
         </p>
       </section>
       <section className={style.img__container}>
-        <Imagen src="src/assets//novedades/novedad2.svg" alt="novedad" />
-        <Imagen src="src/assets/novedades/novedad2.svg" alt="novedad" />
+        <Imagen src={novedad2} alt="novedad" />
+        <Imagen src={novedad2} alt="novedad" />
       </section>
 
       <CTAContact alwaysActive />

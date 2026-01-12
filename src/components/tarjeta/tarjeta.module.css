@@ -4,121 +4,114 @@
   border: solid 2px var(--principal-color-green);
   border-radius: 24px;
   margin: 1rem;
+  overflow: hidden; /* Ensure content stays inside */
 }
 
 .card {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  padding: 0.5rem;
 }
 
 .card__img {
-  padding: .75rem;
-  width: 47%;
+  padding: 0.75rem;
+  width: 45%;
 }
 
 .card__fecha {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
+  width: 55%;
+  padding-left: 0.5rem;
 }
 
 .card__lugar {
   color: var(--principal-color-green);
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   font-weight: 700;
 }
 
 .card__lugar .big {
   font-size: 1.125rem;
   line-height: 1.25rem;
+  display: block;
 }
 
 .card__lugar .contacto {
-  font-size: .75rem;
+  font-size: 0.75rem;
   line-height: 1.25rem;
 }
 
-
-
 .card__info {
   color: var(--principal-color-black);
-  font-size: .75rem;
-  font-weight: 700;
-  width: 70%;
-  line-height: 2;
-  margin: 1rem;
-  text-align: justify;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 0.5rem 1rem 1rem 1rem;
+  text-align: left;
 }
 
-
-/* para estilizar hasta que este el contenido */
+/* Sidebar style for mobile (bottom) */
 .componente {
-  position: relative;
-  right: 8px;
-  color: var(--principal-color-white);
+  color: #fff;
   background-color: var(--principal-color-green);
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 700;
   text-align: center;
-  /* line-height: 1rem; */
-  padding: .25rem;
+  padding: 0.5rem;
   width: 100%;
-  height: 2rem;
-  border-radius: 0 0 20px 20px;
-  border: 1px solid var(--principal-color-green);
-  margin: 0 .5rem;
-}
-
-.oculto {
-  display: none;
-
-}
-
-.show {
-  display: flex;
 }
 
 @media screen and (min-width: 780px) {
   .card__container {
-    width: 60%;
+    width: 80%; /* Increased from 60% to give more room */
+    max-width: 900px;
+    margin: 1.5rem auto;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 12rem;
+    align-items: stretch;
+    min-height: 14rem;
   }
 
   .card {
-    width: 40%;
-    height: 15vh;
+    width: 45%;
+    padding: 0;
   }
 
   .card__img {
-    width: 100%;
-    padding: .5rem;
+    width: 50%;
+    padding: 0.5rem;
   }
 
   .card__fecha {
+    width: 50%;
+    padding: 1rem 0;
+  }
+
+  .card__info {
+    width: 45%;
+    flex-grow: 1;
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-self: flex-start;
+    align-items: center;
+    border-left: 1px dashed #ccc;
+    padding-left: 1.5rem;
+    margin: 1rem;
+  }
 
-    z-index: 1;
-    width: 1rem;
-
-    border: 1px solid red;
+  .componente {
+    width: 2.5rem;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
   }
 
   .arroba,
   .contacto {
-    display: none;
+    display: inline-block;
   }
-
-  .componente {
-    height: 100%;
-    width: 10px;
-  }
-
 }

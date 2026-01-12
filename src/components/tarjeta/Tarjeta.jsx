@@ -2,22 +2,23 @@ import Imagen from '../img/Imagen';
 import Fecha from './Fecha';
 // import TarjetaItems from './TarjetaItems';
 import style from './tarjeta.module.css';
+import defaultImage from '../../assets/novedades/novedad2.svg';
 
-export default function Tarjeta() {
+export default function Tarjeta({ image, date, place, contact }) {
   return (
     <div className={style.card__container}>
       {/* <TarjetaItems /> */}
       <div className={style.card}>
         <div className={style.card__img}>
-          <Imagen src="src/assets/novedades/novedad2.svg" alt="novedad" />
+          <Imagen src={image || defaultImage} alt="novedad" />
         </div>
         <div className={style.card__fecha}>
-          <Fecha>Desde 20.06.23</Fecha>
+          <Fecha>{date || 'Desde 20.06.23'}</Fecha>
           <div className={style.card__lugar}>
-            <span className={style.big}>ROSARIO!</span>
+            <span className={style.big}>{place || 'ROSARIO!'}</span>
             <div>
               <span className={style.arroba}>@ </span>
-              <span className={style.contacto}> CONTACTAME</span>
+              <span className={style.contacto}> {contact || 'CONTACTAME'}</span>
             </div>
           </div>
         </div>

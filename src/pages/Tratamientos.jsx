@@ -4,6 +4,7 @@ import { Title } from '../components/title/Title';
 import { CTAContact } from '../components/cta/CTAContact';
 import CTASocialMedia from '../components/cta/CTASocialMedia';
 import Imagen from '../components/img/Imagen';
+import novedad2 from '../assets/novedades/novedad2.svg';
 // estilos
 import style from './evaluaciones.module.css';
 
@@ -37,21 +38,21 @@ function Tratamientos() {
           diseñada para tener un impacto en el Sistema Nervioso Central (SNC) y
           da lugar a la capacidad de no solo ofrecer cambios en la organización
           del SNC, sino también más organización en las respuestas posteriores
-          que el SNC tiene la capacidad de producir. Un 'tratamiento intensivo'
-          no pretende ser una 'cura', pero es un buen trampolín para
-          proporcionar una base a partir de la cual se puede producir un cambio
-          y perfeccionarse aún más en el tratamiento continuo y los programas
-          del hogar/escuela, etc. Son 5 encuentros semanales, ideal para
-          familias del interior, con objetivos específicos o que estén a la
-          espera de turnos de Terapia Ocupacional. Algunos tratamientos
-          intensivos pueden estar dirigidos a resolver desafíos de escritura,
-          alimentación, intervención temprana (de 0 a 2 años), dispraxias,
-          dificultades de regulación.
+          que el SNC tiene la capacidad de producir. Un &apos;tratamiento
+          intensivo&apos; no pretende ser una &apos;cura&apos;, pero es un buen
+          trampolín para proporcionar una base a partir de la cual se puede
+          producir un cambio y perfeccionarse aún más en el tratamiento continuo
+          y los programas del hogar/escuela, etc. Son 5 encuentros semanales,
+          ideal para familias del interior, con objetivos específicos o que
+          estén a la espera de turnos de Terapia Ocupacional. Algunos
+          tratamientos intensivos pueden estar dirigidos a resolver desafíos de
+          escritura, alimentación, intervención temprana (de 0 a 2 años),
+          dispraxias, dificultades de regulación.
         </p>
       </section>
       <section className={style.img__container}>
-        <Imagen src="src/assets//novedades/novedad2.svg" alt="novedad" />
-        <Imagen src="src/assets/novedades/novedad2.svg" alt="novedad" />
+        <Imagen src={novedad2} alt="novedad" />
+        <Imagen src={novedad2} alt="novedad" />
       </section>
 
       <CTAContact alwaysActive />
